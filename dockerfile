@@ -25,6 +25,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 # Copy application files
 COPY chatbotengine.py .
+COPY mqtt.py .
 COPY main.py .
 COPY solar_power_prediction.pkl .
 

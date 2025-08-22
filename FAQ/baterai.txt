@@ -11,16 +11,6 @@ A: Umumnya:
 - Nickel-based (jarang)
 Jenis lithium-ion kini paling banyak dipilih karena efisiensi dan umur panjang.
 
-Q: Apa perbedaan utama antara baterai lead-acid dan lithium-ion?
-A:
-| Aspek           | Lead-Acid          | Lithium-ion            |
-|------------------|--------------------|-------------------------|
-| Umur Siklus      | 500–1000 cycle     | 2000–7000 cycle         |
-| Efisiensi        | 70–85%             | 90–98%                  |
-| Perawatan        | Perlu (flooded)    | Minim                   |
-| Harga            | Lebih murah        | Lebih mahal di awal     |
-| Berat            | Lebih berat        | Lebih ringan            |
-
 Q: Apa itu siklus hidup baterai (cycle life)?
 A: Satu siklus terjadi ketika baterai diisi penuh lalu digunakan hingga kapasitas tertentu. Semakin banyak siklus yang dapat dilakukan, semakin lama umur pakainya.
 

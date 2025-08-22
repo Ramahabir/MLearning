@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, WebSocket
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
@@ -6,6 +6,7 @@ from langchain_core.messages import HumanMessage
 import requests
 import joblib
 from chatbotengine import chatbot_app  # updated import
+import esp32mqtt
 
 app = FastAPI()
 
@@ -69,3 +70,7 @@ def predict():
     # Calculate total energy after all results are collected
     total_energy = sum(row["predicted_power"] for row in results)
     return {"data": results, "total_energy": round(total_energy, 2)}
+
+@app.get("/sensor")
+def get_sensor():
+    return esp32mqtt.latest_data if esp32mqtt.latest_data else {"error": "No data received yet"}
